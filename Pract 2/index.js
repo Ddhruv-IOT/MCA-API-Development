@@ -7,14 +7,13 @@ app.use(express.json());
 let items = [];
 
 app.get('/items', (req, res) => {
-    res.status(200).send(items);
+    res.status(200).send({list : items});
 });
 
 app.post('/addItems', (req, res) => {
     const newItem = req.body;
     if (!newItem.name){
-        res.status(400).send({ message: 'Item name is required' });
-        return;
+        return res.status(400).send({ message: 'Item name is required' });
     }
     items.push(newItem.name);
     res.status(201).send({ message: 'Item added successfully', item: newItem.name });
