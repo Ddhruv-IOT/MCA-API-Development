@@ -1,0 +1,7 @@
+[2025-03-21T19:49:39.274Z] ✅ Server started at http://localhost:3000
+[2025-03-21T19:49:41.412Z] GET /
+[2025-03-21T19:49:41.413Z] ❌ Invalid request: GET /
+[2025-03-21T19:49:53.271Z] GET /endpoint1
+[2025-03-21T19:50:03.540Z] ✅ Server started at http://localhost:3000
+[2025-03-21T19:50:10.516Z] GET /endpoint2
+[2025-03-21T19:53:40.513Z] ✅ Server started at http://localhost:3000
