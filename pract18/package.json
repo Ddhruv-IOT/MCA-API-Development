@@ -12,6 +12,7 @@
   "dependencies": {
     "express": "^4.21.2",
     "nodemon": "^3.1.9",
+    "pract18": "file:",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.1"
   }

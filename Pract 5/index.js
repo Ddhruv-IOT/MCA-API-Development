@@ -7,18 +7,21 @@ app.use(express.json());
 let items = [];
 
 app.get('/items', (req, res) => {
-    res.status(200).send(items);
+    res.status(200).send({items: items});
 });
 
 app.get('/items/:index', (req, res) => {
     const { index } = req.params;
-    console.log(index);
 
-    const item = items[index];
+    console.log(index);
+    const indexInt = parseInt(index);
+
+    const item = items[indexInt];
+    console.log(item);
     if (!item) {
         return res.status(404).send({ message: 'Item not found' });
     }
-    res.status(200).send(item);
+    res.send({item: item});
 });
 
 app.post('/addItems', (req, res) => {
