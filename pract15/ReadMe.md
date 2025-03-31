@@ -5,6 +5,8 @@
 - POST: http://localhost:3000/login
 - GET: http://localhost:3000/protected
 
+### npm install express jsonwebtoken bcrypt body-parser
+
 ## Flow
 1. Register
 2. Then Login with credentials
