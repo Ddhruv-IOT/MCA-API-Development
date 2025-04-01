@@ -3,7 +3,7 @@ const app = express();
 const PORT = 3000;
 
 // Sample user data, generate 50 users
-const users = Array.from({ length: 50 }, (_, i) => ({ id: i + 1, name: `User${i + 1}` }));
+const users = Array.from({ length: 500000 }, (_, i) => ({ id: i + 1, name: `User${i + 1}` }));
 
 app.get('/users', (req, res) => {
     let { page = 1, limit = 10 } = req.query;
